@@ -18,6 +18,34 @@ public class Car {
         this.fuel = 0;
     }
 
+    public Integer getTier() {
+        return tier;
+    }
+
+    public void setTier(Integer tier) {
+        this.tier = tier;
+    }
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    private void fuelConsumption(){
+        fuel -= 1;
+    }
+
     // Contoh Getter biasanya cuma sebaris, tapi bisa dikasih validasi
     public Integer getFuel(){
         if (fuel == null){
@@ -44,6 +72,7 @@ public class Car {
             System.out.println("Tangki bermasalah");
         } else {
             System.out.println("Jalan!");
+            fuelConsumption();
         }
     }
 
