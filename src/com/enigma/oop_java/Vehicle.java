@@ -24,4 +24,8 @@ public class Vehicle {
     public Integer getYear() {
         return year;
     }
+
+    public String detailInfo(){
+        return "Nama: " + brand + " | Tahun: " + year;
+    }
 }

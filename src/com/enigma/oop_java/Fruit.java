@@ -25,4 +25,8 @@ public class Fruit {
     public void setName(String name) {
         this.name = name;
     }
+
+    public String detailInfo(){
+        return "Nama: " + name + " | Warna: " + color;
+    }
 }

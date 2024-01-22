@@ -25,4 +25,8 @@ public class Person {
     public void setAge(Integer age) {
         this.age = age;
     }
+
+    public String detailInfo(){
+        return "Nama: " + name + " | Umur: " + age;
+    }
 }
