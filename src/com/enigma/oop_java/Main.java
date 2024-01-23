@@ -2,6 +2,8 @@ package com.enigma.oop_java;
 
 import com.enigma.oop_java.inheritance.Block;
 import com.enigma.oop_java.inheritance.Rectangle;
+import com.enigma.oop_java.object_interaction.Hero;
+import com.enigma.oop_java.object_interaction.Monster;
 
 public class Main {
     public static void main(String[] args) {
@@ -37,14 +39,26 @@ public class Main {
 ////        System.out.println(buah1.detailInfo());
 ////        System.out.println(buah2.detailInfo());
 
-        Rectangle rectangle = new Rectangle(2, 3);
-        Block block = new Block(2, 3, 10);
+//        Rectangle rectangle = new Rectangle(2, 3);
+//        Block block = new Block(2, 3, 10);
+//
+//        System.out.println("Luas persegi: " + rectangle.getArea());
+//        System.out.println("Keliling persegi: " + rectangle.getCircumference());
+//        System.out.println("Volume balok: " + block.getVolume());
+//        System.out.println("Luas Permukaan balok: " + block.getArea());
 
-        System.out.println("Luas persegi: " + rectangle.getArea());
-        System.out.println("Keliling persegi: " + rectangle.getCircumference());
-        System.out.println("Volume balok: " + block.getVolume());
-        System.out.println("Luas Permukaan balok: " + block.getArea());
+        Hero miya = new Hero("Miya", 5000, 200);
+        Hero balmond = new Hero("Balmond", 10000, 150);
 
+        Hero ironMan = new Hero("Iron Man", 5000, 400);
+        Monster monster = new Monster("Monster",9000,300);
+        Monster thanos = new Monster("Thanos",10000,500);
+
+        ironMan.attack(thanos);
+
+//        System.out.println(miya.getName() + " is Attacking " + balmond.getName());
+//        miya.attack(balmond);
+//        System.out.println(balmond.getName() + " health is : " + balmond.getHp() + "\n------");
     }
 
 
