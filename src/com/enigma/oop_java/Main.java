@@ -3,7 +3,9 @@ package com.enigma.oop_java;
 import com.enigma.oop_java.inheritance.Block;
 import com.enigma.oop_java.inheritance.Rectangle;
 import com.enigma.oop_java.object_interaction.Hero;
+import com.enigma.oop_java.object_interaction.Lamp;
 import com.enigma.oop_java.object_interaction.Monster;
+import com.enigma.oop_java.object_interaction.Room;
 
 public class Main {
     public static void main(String[] args) {
@@ -47,19 +49,24 @@ public class Main {
 //        System.out.println("Volume balok: " + block.getVolume());
 //        System.out.println("Luas Permukaan balok: " + block.getArea());
 
-        Hero miya = new Hero("Miya", 5000, 200);
-        Hero balmond = new Hero("Balmond", 10000, 150);
-
-        Hero ironMan = new Hero("Iron Man", 5000, 400);
-        Monster monster = new Monster("Monster",9000,300);
-        Monster thanos = new Monster("Thanos",10000,500);
-
-        ironMan.attack(thanos);
+//        Hero miya = new Hero("Miya", 5000, 200);
+//        Hero balmond = new Hero("Balmond", 10000, 150);
+//
+//        Hero ironMan = new Hero("Iron Man", 5000, 400);
+//        Monster monster = new Monster("Monster",9000,300);
+//        Monster thanos = new Monster("Thanos",10000,500);
+//
+//        ironMan.attack(thanos);
 
 //        System.out.println(miya.getName() + " is Attacking " + balmond.getName());
 //        miya.attack(balmond);
 //        System.out.println(balmond.getName() + " health is : " + balmond.getHp() + "\n------");
+
+        Lamp lamp = new Lamp();
+        Room room = new Room(lamp);
+
+//        room.switchLamp();
+
+        System.out.println(lamp.isOn());
     }
-
-
 }
