@@ -11,4 +11,9 @@ public class Square extends Shape {
     public Double getCircumference(){
         return 4 * side;
     }
+
+    @Override
+    public Double getArea() {
+        return side * side;
+    }
 }

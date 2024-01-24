@@ -5,5 +5,8 @@ package com.enigma.oop_java.abstraction;
 
 public abstract class Shape {
     public abstract Double getCircumference();
+    public abstract Double getArea();
+
+
     // Access modifier ada 2 (Default, public)
 }

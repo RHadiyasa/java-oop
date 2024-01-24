@@ -1,7 +1,7 @@
 package com.enigma.oop_java;
 
-import com.enigma.oop_java.abstraction.Shape;
-import com.enigma.oop_java.abstraction.Square;
+import com.enigma.oop_java.abstraction.*;
+import com.enigma.oop_java.abstraction.Vehicle;
 import com.enigma.oop_java.inheritance.Animal;
 import com.enigma.oop_java.inheritance.Mammals;
 import com.enigma.oop_java.polymorphism.Developer;
@@ -83,8 +83,17 @@ public class Main {
 //
 //        employee = new Developer("Sadikin");
 //        employee.sayHello("Gunawan");
-        Shape shape = new Square(10.4);
-        Double result = shape.getCircumference();
-        System.out.println(result);
+//        Shape shape = new Square(10.0);
+//        Shape triangle = new Triangle(10.0, 5.0);
+//
+//        Double keliling = shape.getCircumference();
+//        Double luas = shape.getArea();
+//        Double triangleArea = triangle.getArea();
+//
+//        System.out.println("Keliling : " + keliling);
+//        System.out.println("Luas : " + luas);
+//        System.out.println("Luas Segitiga : " + triangleArea);
+        Vehicle vehicle = new Motorcycle();
+        vehicle.run();
     }
 }
