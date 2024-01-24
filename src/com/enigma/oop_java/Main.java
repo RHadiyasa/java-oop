@@ -4,6 +4,8 @@ import com.enigma.oop_java.abstraction.*;
 import com.enigma.oop_java.abstraction.Vehicle;
 import com.enigma.oop_java.inheritance.Animal;
 import com.enigma.oop_java.inheritance.Mammals;
+import com.enigma.oop_java.object_interaction.Hero;
+import com.enigma.oop_java.object_interaction.Monster;
 import com.enigma.oop_java.polymorphism.Developer;
 import com.enigma.oop_java.polymorphism.Employee;
 import com.enigma.oop_java.polymorphism.Manager;
@@ -93,7 +95,15 @@ public class Main {
 //        System.out.println("Keliling : " + keliling);
 //        System.out.println("Luas : " + luas);
 //        System.out.println("Luas Segitiga : " + triangleArea);
-        Vehicle vehicle = new Motorcycle();
-        vehicle.run();
+//        Flyable[] vehicle = new Flyable[2];
+////        vehicle[0] = new Motorcycle();
+//        vehicle[1] = new Airplane();
+
+        Hero hero = new Hero("Rafi Hadiyasa", 10000,1000);
+        Monster monster = new Monster("Olla", 5000, 700);
+
+        hero.attack(monster);
+        monster.attack(hero);
+
     }
 }
