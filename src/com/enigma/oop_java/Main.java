@@ -2,6 +2,8 @@ package com.enigma.oop_java;
 
 import com.enigma.oop_java.abstraction.*;
 import com.enigma.oop_java.abstraction.Vehicle;
+import com.enigma.oop_java.example_static.Constant;
+import com.enigma.oop_java.example_static.Helper;
 import com.enigma.oop_java.inheritance.Animal;
 import com.enigma.oop_java.inheritance.Mammals;
 import com.enigma.oop_java.object_interaction.Hero;
@@ -99,11 +101,18 @@ public class Main {
 ////        vehicle[0] = new Motorcycle();
 //        vehicle[1] = new Airplane();
 
-        Hero hero = new Hero("Rafi Hadiyasa", 10000,1000);
-        Monster monster = new Monster("Olla", 5000, 700);
+//        Hero hero = new Hero("Rafi Hadiyasa", 10000,1000);
+//        Monster monster = new Monster("Olla", 5000, 700);
+//
+//        hero.attack(monster);
+//        monster.attack(hero);
 
-        hero.attack(monster);
-        monster.attack(hero);
+        System.out.println(Constant.APPLICATION);
+
+        String nama = Helper.inputan("Masukan Nama : ");
+        String umur = Helper.inputan("Masukan umur : ");
+        System.out.println(nama);
+        System.out.println(umur);
 
     }
 }
